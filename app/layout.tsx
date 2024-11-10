@@ -2,7 +2,13 @@ import { ReactNode } from 'react';
 
 import '@/app/_styles/globals.css';
 import Logo from '@/app/_components/Logo';
-import { title } from 'process';
+
+import { Josefin_Sans } from 'next/font/google';
+
+const josefin = Josefin_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata = {
   title: {
@@ -16,7 +22,9 @@ export const metadata = {
 function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>
-      <body className='bg-primary-950 text-primary-100 min-h-screen'>
+      <body
+        className={`bg-primary-950 text-primary-100 min-h-screen ${josefin.className}`}
+      >
         <header>
           <Logo />
         </header>
