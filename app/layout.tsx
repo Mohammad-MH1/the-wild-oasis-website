@@ -25,7 +25,7 @@ function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='en'>
       <body
-        className={`bg-primary-950 text-primary-100 min-h-screen ${josefin.className} flex flex-col antialiased`}
+        className={`bg-primary-950 text-primary-100 min-h-screen ${josefin.className} flex flex-col antialiased relative`}
       >
         <Header />
         <div className='flex-1 px-8 py-12'>
