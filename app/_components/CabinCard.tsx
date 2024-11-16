@@ -1,6 +1,6 @@
 import { UsersIcon } from '@heroicons/react/24/solid';
 
-import { type Cabin } from '../cabins/page';
+import { type Cabin } from '@/app/_components/CabinList';
 import Image from 'next/image';
 import Link from 'next/link';
 
